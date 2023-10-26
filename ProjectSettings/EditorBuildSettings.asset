@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Scene/MenuScene.unity
+    guid: af382e92c4450e54e8de00558f53f8a0
+  - enabled: 1
+    path: Assets/Scenes/Scene/GamePlay.unity
+    guid: 4d876a4068b76d044bf735e57613e922
+  - enabled: 1
+    path: Assets/Scenes/Scene/CardDBTest.unity
+    guid: 47bc999e57b7264458cfb9baae5731ae
+  - enabled: 1
+    path: Assets/AxieInfinity/AxieMixerUnity/Demo/_Scenes/DemoMixer.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
