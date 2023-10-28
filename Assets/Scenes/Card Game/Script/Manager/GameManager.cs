@@ -5,23 +5,6 @@ using UnityEngine;
 
 public class GameManager : PersistenceSingleton<GameManager>
 {
-    [Header("Hand")]
-    public int handSize = 7;
-    public PlayerHand playerHand;
-    public PlayerHand enemyHand;
-
-    [Header("Deck")]
-    public int deckSize = 30; // Maximum deck size
-
-    [Header("SpellField")]
-    public PlayerField playerField;
-    public PlayerField enemyField;
-
-    [Header("Turn Management")]
-    public GameObject endTurnButton;
-    [HideInInspector] public bool isOurTurn = false;
-    [HideInInspector] public int turnCount = 1; // Start at 1
-
     public PlayerManager Player1;
     public PlayerManager Player2;
 

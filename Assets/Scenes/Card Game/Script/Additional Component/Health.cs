@@ -22,6 +22,8 @@ public class Health : MonoBehaviour
     public UnityEvent OnKillSelfEvent;
     public UnityEvent<int, bool> OnHit;
     //* This event should return int: total damage receive; bool: is shielded */
+    public UnityEvent<int> OnHealthChange;
+    //*This should return int: current health
     #region Callback
     void OnEnable()
     {
@@ -130,6 +132,14 @@ public class Health : MonoBehaviour
     public void RemoveOnHitListener(UnityAction<int, bool>  action)
     {
         OnHit.RemoveListener(action);
+    }
+    public void AddOnHealthChangeListener(UnityAction<int> action)
+    {
+        OnHealthChange.AddListener(action);
+    }
+    public void RemoveOnHealthChangeListener(UnityAction<int>  action)
+    {
+        OnHealthChange.RemoveListener(action);
     }
 
     #endregion
