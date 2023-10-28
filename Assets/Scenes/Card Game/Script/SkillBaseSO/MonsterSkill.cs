@@ -7,15 +7,21 @@ using UnityEngine;
 public abstract class MonsterSkill : ScriptableObject
 {
     public string SkillName;
-    public MonsterType MainTypeEnergy;
+    public MonsterTrait MainTypeEnergy;
     public int SameTypeEnergyCost;
     public int OtherTypeEnergyCost;
     public string SkillDescription;
+    public bool NeedTarget;
     public void CheckUsable(PlayerAuthority player)
     {
 
     }
     public virtual void OnUse(MonsterCard target, MonsterCard user, PlayerManager player)
+    {
+        //Attack:
+        //User.m_component
+    }
+    public virtual void OnUse(MonsterCard user, PlayerManager player)
     {
 
     }
