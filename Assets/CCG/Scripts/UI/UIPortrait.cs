@@ -6,11 +6,6 @@ public partial class UIPortrait : MonoBehaviour
     public GameObject panel;
     public Image portrait;
     public Text username;
-    public Text deckAmount;
-    public Text graveyardAmount;
-    public Text handAmount;
-    public Text health;
-    public Text mana;
     public PlayerType playerType;
 
     private PlayerInfo enemyInfo;
